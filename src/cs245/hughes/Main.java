@@ -10,8 +10,9 @@ public class Main {
 		float score2;
 
 		MCQuizQuestion q3 = new MCQuizQuestion("When was Coe College Founded");
-		q3.addOption("a. 1802");
-		q3.addOption("b. 1851");
+		q3.addOption("1802", false);
+		q3.addOption("1851", true);
+
 		q = new Quiz();
 		q.addQuestion(new QuizQuestion("What is the course number for this class? ", "CS245"));
 		q.addQuestion(new QuizQuestion("True/False:  Polymorphism is also known as Early-Binding ", "False"));

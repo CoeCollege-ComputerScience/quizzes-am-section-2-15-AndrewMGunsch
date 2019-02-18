@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class QuizQuestion {
     private String question;
-    private String correctAnswer;
+    protected String correctAnswer;
 //    private String studentAnswer;
 //    private Scanner scan;
 
@@ -14,10 +14,12 @@ public class QuizQuestion {
         //  scan = new Scanner(System.in);
     }
 
-    public void displayQuestion(){
+    public void displayQuestion()
+    {
         System.out.println(question);
         //studentAnswer = scan.nextLine();
     }
+
 
     public boolean isCorrect(String studentAnswer){
         return correctAnswer.equals(studentAnswer);
